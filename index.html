@@ -4,192 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tentative Monologues</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #000;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        header h1, header h2 {
-            margin: 0;
-            color: #333;
-        }
-        .bar-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 1em;
-        }
-        .bar {
-            background-color: #000;
-            width: 30px;
-            height: 100px;
-            position: relative;
-        }
-        .bar::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 20px;
-            background-color: #ddd;
-        }
-        .links {
-            margin-top: 1em;
-        }
-        .links a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 1em;
-            margin: 0 10px;
-        }
-        .links a:hover {
-            text-decoration: underline;
-        }
-        .episode-section {
-            background-color: #ffffff;
-            margin-top: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-        .episode-section h3 {
-            margin-top: 0;
-            color: #333;
-        }
-        .episode-summary {
-            margin-top: 10px;
-            font-size: 0.95em;
-            color: #666;
-        }
-        .theme-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        /* Gallery Styling */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .gallery img, .gallery video {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h2>LEKHELEBANE MOTAUNG PRESENTS</h2>
-            <h1>The Tentative Monologues</h1>
-            
-            <div class="bar-container">
-                <div class="bar" style="height: 150px;"></div>
-                <div class="bar" style="height: 100px;"></div>
-                <div class="bar" style="height: 120px;"></div>
-                <div class="bar" style="height: 80px;"></div>
-                <div class="bar" style="height: 100px;"></div>
-            </div>
-            
-            <div class="links">
-                <a href="https://open.spotify.com/show/YOUR_SPOTIFY_LINK" target="_blank">Listen on Spotify</a>
-                <a href="https://www.instagram.com/YOUR_INSTAGRAM_LINK" target="_blank">Follow on Instagram</a>
-            </div>
-        </header>
 
-        <!-- Theme-based Episode Sections -->
-        <div class="theme-container">
-            <!-- Example Theme Section -->
-            <div class="episode-section">
-                <h3>Theme 1: Self-Reflection</h3>
-                <p class="episode-summary">A journey into understanding ourselves better through thought-provoking questions and personal stories.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#episodes">Episodes</a></li>
+            <li><a href="#essays">Essays</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-                <!-- Episode 1 -->
-                <h4>Episode 1: The Mirror Talks</h4>
-                <p><strong>Description:</strong> Exploring the idea of self-image and how our perception shapes our identity.</p>
-                <p><strong>Listen:</strong> <a href="https://open.spotify.com/episode/YOUR_EPISODE_LINK" target="_blank">Spotify</a></p>
-                <p><strong>Summary:</strong> This episode delves into the psychological layers of self-image and how personal reflection influences behavior.</p>
-                <p><strong>Essay:</strong> <a href="#essay1">Read Full Essay</a></p>
-                
-                <!-- Gallery for Episode -->
-                <h4>Gallery</h4>
-                <div class="gallery">
-                    <!-- Replace with actual image and video URLs -->
-                    <img src="path-to-image1.jpg" alt="Related image 1">
-                    <img src="path-to-image2.jpg" alt="Related image 2">
-                    <video src="path-to-video1.mp4" controls></video>
-                    <video src="path-to-video2.mp4" controls></video>
-                </div>
-                
-                <!-- Essay Content (Hidden, expand as needed) -->
-                <div id="essay1" style="display: none;">
-                    <h4>Essay: The Mirror Talks</h4>
-                    <p>This is the full essay content that delves deeper into the themes of self-image and introspection...</p>
-                </div>
-            </div>
-
-            <!-- Additional Theme Section Example -->
-            <div class="episode-section">
-                <h3>Theme 2: Relationships</h3>
-                <p class="episode-summary">Episodes that tackle different aspects of human relationships, from friendships to family ties.</p>
-
-                <!-- Episode 2 -->
-                <h4>Episode 2: Bonds That Last</h4>
-                <p><strong>Description:</strong> Examining what makes relationships endure over time.</p>
-                <p><strong>Listen:</strong> <a href="https://open.spotify.com/episode/YOUR_EPISODE_LINK" target="_blank">Spotify</a></p>
-                <p><strong>Summary:</strong> Discover the secrets of long-lasting relationships and the dynamics that foster deep connections.</p>
-                <p><strong>Essay:</strong> <a href="#essay2">Read Full Essay</a></p>
-                
-                <!-- Gallery for Episode -->
-                <h4>Gallery</h4>
-                <div class="gallery">
-                    <!-- Replace with actual image and video URLs -->
-                    <img src="path-to-image3.jpg" alt="Related image 3">
-                    <img src="path-to-image4.jpg" alt="Related image 4">
-                    <video src="path-to-video3.mp4" controls></video>
-                    <video src="path-to-video4.mp4" controls></video>
-                </div>
-
-                <!-- Essay Content (Hidden, expand as needed) -->
-                <div id="essay2" style="display: none;">
-                    <h4>Essay: Bonds That Last</h4>
-                    <p>This is the full essay content exploring the depth of meaningful relationships and the commitment they require...</p>
-                </div>
-            </div>
-
-            <!-- Additional themes can be added here -->
+    <!-- Home Section -->
+    <header id="home">
+        <h1>Lekhelebane Motaung Presents</h1>
+        <h2>The Tentative Monologues</h2>
+        <div class="bar-container">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </div>
+        <div class="links">
+            <a href="https://open.spotify.com/show/1l9p1uwFKbz45gMeL5Jyxg" target="_blank">Listen on Spotify</a> |
+            <a href="https://www.instagram.com/tentative_monologues_ls" target="_blank">Follow on Instagram</a> |
+            <a href="https://anchor.fm/s/d92bd14c/podcast/rss" target="_blank">RSS Feed</a>
+        </div>
+    </header>
 
-    <script>
-        // JavaScript to toggle essay visibility
-        document.querySelectorAll("a[href^='#essay']").forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const essay = document.querySelector(link.getAttribute('href'));
-                essay.style.display = essay.style.display === 'none' ? 'block' : 'none';
-            });
-        });
-    </script>
+    <!-- Episodes Section -->
+    <section id="episodes">
+        <h3>Episodes</h3>
+        <div class="episode-grid">
+            <!-- Episode 1 -->
+            <div class="episode-card">
+                <h4>‘ACCORDION’. EP.1</h4>
+                <p>A deep dive into the villainous mind of MF DOOM through one of his most popular songs.</p>
+                <a href="https://open.spotify.com/episode/1C5mE9frYUjzxsCCmzztiX?si=7c31fc37c9cb4421" target="_blank">Listen on Spotify</a>
+            </div>
+            
+            <!-- Episode 2 -->
+            <div class="episode-card">
+                <h4>AN ODE TO SANKOMOTA. EP.2</h4>
+                <p>A brief dive into the biography and career of one of Africa's most revered bands, Sankomota.</p>
+                <a href="https://instagram.com/uhuru266" target="_blank">Sankomota Fan Page on Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essays Section -->
+    <section id="essays">
+        <h3>Essays</h3>
+        <div class="essay-summary">
+            <h4>‘ACCORDION’. EP.1</h4>
+            <p>Summary: COMING SOON <a href="#" class="read-more">Read More</a></p>
+        </div>
+        <div class="essay-summary">
+            <h4>AN ODE TO SANKOMOTA. EP.2</h4>
+            <p>Summary: COMING SOON <a href="#" class="read-more">Read More</a></p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h3>Gallery</h3>
+        <div class="gallery-grid">
+            <!-- Gallery images will be added here once provided -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Follow us on <a href="https://www.instagram.com/tentative_monologues_ls" target="_blank">Instagram</a></p>
+        <p>&copy; 2024 The Tentative Monologues. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
