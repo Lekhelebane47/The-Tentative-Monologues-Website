@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tentative Monologues - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="home.js"></script> <!-- Optional for additional animations -->
+</head>
+<body>
+    <!-- Header / Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="essays.html">Essays</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span>The Tentative Monologues</span></h1>
+            <p>Dive into thought-provoking discussions and explore the world of "The Tentative Monologues."</p>
+            <a href="episodes.html" class="btn-primary">Explore Episodes</a>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights">
+        <h2>Podcast Highlights</h2>
+        <div class="highlight-container">
+            <div class="highlight-card">
+                <h3>Our Latest Episodes</h3>
+                <p>Catch up with our latest thought-provoking conversations.</p>
+                <a href="episodes.html" class="btn-secondary">View Episodes</a>
+            </div>
+            <div class="highlight-card">
+                <h3>Exclusive Essays</h3>
+                <p>Dive deeper with exclusive essays for each episode.</p>
+                <a href="essays.html" class="btn-secondary">Read Essays</a>
+            </div>
+            <div class="highlight-card">
+                <h3>Image Gallery</h3>
+                <p>Explore the gallery for each episode with images and media.</p>
+                <a href="gallery.html" class="btn-secondary">View Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 The Tentative Monologues. All rights reserved.</p>
+        <p>Contact: <a href="mailto:contact@tentativemonologues.com">contact@tentativemonologues.com</a></p>
+        <p>Follow us on <a href="https://instagram.com/tentativemonologues" target="_blank">Instagram</a></p>
+    </footer>
+</body>
+</html>
