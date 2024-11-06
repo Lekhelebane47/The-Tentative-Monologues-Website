@@ -4,86 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tentative Monologues</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#episodes">Episodes</a></li>
-            <li><a href="#essays">Essays</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Home Section -->
-    <header id="home">
-        <h1>Lekhelebane Motaung Presents</h1>
-        <h2>The Tentative Monologues</h2>
-        <div class="bar-container">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="links">
-            <a href="https://open.spotify.com/show/1l9p1uwFKbz45gMeL5Jyxg" target="_blank">Listen on Spotify</a> |
-            <a href="https://www.instagram.com/tentative_monologues_ls" target="_blank">Follow on Instagram</a> |
-            <a href="https://anchor.fm/s/d92bd14c/podcast/rss" target="_blank">RSS Feed</a>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="episodes.html">Episodes</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="essays.html">Essays</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Episodes Section -->
-    <section id="episodes">
-        <h3>Episodes</h3>
-        <div class="episode-grid">
-            <!-- Episode 1 -->
-            <div class="episode-card">
-                <h4>‘ACCORDION’. EP.1</h4>
-                <p>A deep dive into the villainous mind of MF DOOM through one of his most popular songs.</p>
-                <a href="https://open.spotify.com/episode/1C5mE9frYUjzxsCCmzztiX?si=7c31fc37c9cb4421" target="_blank">Listen on Spotify</a>
-            </div>
-            
-            <!-- Episode 2 -->
-            <div class="episode-card">
-                <h4>AN ODE TO SANKOMOTA. EP.2</h4>
-                <p>A brief dive into the biography and career of one of Africa's most revered bands, Sankomota.</p>
-                <a href="https://instagram.com/uhuru266" target="_blank">Sankomota Fan Page on Instagram</a>
-            </div>
-        </div>
-    </section>
+    <!-- Home Page Content -->
+    <main id="home">
+        <section id="intro">
+            <h1>Welcome to The Tentative Monologues</h1>
+            <p>Discover our latest episodes and explore thought-provoking themes.</p>
+        </section>
 
-    <!-- Essays Section -->
-    <section id="essays">
-        <h3>Essays</h3>
-        <div class="essay-summary">
-            <h4>‘ACCORDION’. EP.1</h4>
-            <p>Summary: COMING SOON <a href="#" class="read-more">Read More</a></p>
-        </div>
-        <div class="essay-summary">
-            <h4>AN ODE TO SANKOMOTA. EP.2</h4>
-            <p>Summary: COMING SOON <a href="#" class="read-more">Read More</a></p>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h3>Gallery</h3>
-        <div class="gallery-grid">
-            <!-- Gallery images will be added here once provided -->
-        </div>
-    </section>
+        <section id="episodes-grid">
+            <h2>Latest Episodes</h2>
+            <div class="grid-container" id="episodes-container"></div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
-    <footer id="contact">
-        <p>Follow us on <a href="https://www.instagram.com/tentative_monologues_ls" target="_blank">Instagram</a></p>
-        <p>&copy; 2024 The Tentative Monologues. All Rights Reserved.</p>
+    <footer>
+        <p>&copy; 2024 The Tentative Monologues. All rights reserved.</p>
+        <p>Contact: <a href="mailto:contact@tentativemonologues.com">contact@tentativemonologues.com</a></p>
+        <p>Follow us on <a href="https://instagram.com/tentativemonologues" target="_blank">Instagram</a></p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
-</html> 
+</html>
