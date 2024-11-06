@@ -1,17 +1,20 @@
-/* General Styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    margin: 0;
+    padding: 0;
     transition: background-color 0.5s ease;
+    background-image: url('your-logo-image-url.jpg'); /* Add podcast logo as background */
+    background-size: cover;
+    background-position: center;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 nav ul {
@@ -22,7 +25,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
 }
 
 nav ul li a {
@@ -36,39 +39,34 @@ nav ul li a:hover {
     color: #e91e63;
 }
 
-/* Section Styles */
-#intro {
+/* Banner Section */
+#episode-banner {
     text-align: center;
+    color: white;
     padding: 3rem 1rem;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-#episodes-grid {
-    padding: 3rem 2rem;
-    background-color: #fafafa;
-}
-
-#episodes-grid h2 {
-    text-align: center;
-    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 2rem;
 }
 
-/* Grid Layout */
+h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Grid Layout for Episodes */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    padding: 1rem;
 }
 
 .episode-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    padding: 1rem;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .episode-card:hover {
@@ -78,14 +76,9 @@ nav ul li a:hover {
 .episode-card img {
     width: 100%;
     border-radius: 8px;
+    height: auto;
 }
 
-.episode-card h3 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-}
-
-/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -105,16 +98,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 768px) {
-    #intro {
+    #episode-banner {
         padding: 2rem 1rem;
     }
 
-    #episodes-grid {
-        padding: 2rem;
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
     }
 }
-
 
 
