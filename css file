@@ -1,1 +1,170 @@
-<link rel="stylesheet" href="style.css"> 
+* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #000; /* Black text */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+header:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+header h1, header h2 {
+    margin: 0;
+    color: #333;
+    transition: color 0.3s;
+}
+header h1:hover, header h2:hover {
+    color: #666; /* Dark gray */
+}
+
+/* Bar graphic */
+.bar-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1em;
+}
+.bar {
+    background-color: #000; /* Black bars */
+    width: 30px;
+    position: relative;
+    transition: height 0.3s, background-color 0.3s;
+}
+.bar:hover {
+    background-color: #666; /* Dark gray on hover */
+}
+.bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #ddd; /* Light gray square at the bottom */
+}
+
+/* Links */
+.links {
+    margin-top: 1em;
+}
+.links a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.links a:hover {
+    color: #333; /* Darker color on hover */
+    text-decoration: underline;
+}
+
+/* Episode section */
+.episode-section {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+.episode-section:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.episode-section h3 {
+    margin-top: 0;
+    color: #333;
+}
+.episode-summary {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Theme container */
+.theme-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Gallery styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+.gallery img, .gallery video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.gallery img:hover, .gallery video:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Button-like links in the episode sections */
+.episode-section a {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: background-color 0.3s, color 0.3s;
+}
+.episode-section a:hover {
+    background-color: #007bff; /* Blue highlight on hover */
+    color: #f0f0f0;
+}
+
+/* Essay section toggling */
+#essay1, #essay2 {
+    display: none;
+    background-color: #eaeaea; /* Light gray for essay background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#essay1 h4, #essay2 h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Toggle essay links */
+.episode-section a.toggle-essay {
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.episode-section a.toggle-essay:hover {
+    color: #007bff;
+}
+
